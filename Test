@@ -1,0 +1,7 @@
+require('./vendor/autoload.php');
+
+use Docparser\Docparser;
+
+$docparser = new Docparser("secret_api_key");
+
+echo $docparser->ping();
